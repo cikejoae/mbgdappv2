@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import reportWebVitals from './reportWebVitals';
 import { Routes, Route } from "react-router-dom";
 import Nft from './nft';
+import Navbar from './navbar';
 
 <Routes>
 <Route path="/nft" element={<Nft />} />
@@ -15,6 +16,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   
   <React.StrictMode>
+    <Navbar />
     <App />
     <Nft />
   </React.StrictMode>
